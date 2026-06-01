@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-prh-fi",
+  "version": "0.1.0",
+  "description": "Finnish Patent and Registration Office (PRH) — YTJ open data MCP.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "prh-fi"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-prh-fi"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
