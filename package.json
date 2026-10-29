@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-prh-fi",
-  "version": "0.1.2",
-  "description": "Finnish Patent and Registration Office (PRH) — YTJ open data MCP.",
+  "version": "0.2.0",
+  "description": "Finnish Patent and Registration Office (PRH) — YTJ open data MCP. Finland's official business register (Business Information System / YTJ). Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-prh-fi": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "prh-fi"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-prh-fi.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/prh-fi",
   "pipeworx": {
-    "sourceHash": "v1-f7a22fe5740b9438249bb78bf504a5681556ee786e671d6436be7299c1ec6db7",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "prh-fi",
+    "gatewaySlug": "prh-fi",
+    "sourceHash": "v1-9bf2c20f898085949cd42de662049782dd67f893c61157f343b52d27dd62d022",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
