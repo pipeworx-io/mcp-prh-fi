@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-prh-fi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Finnish Patent and Registration Office (PRH) — YTJ open data MCP. Finland's official business register (Business Information System / YTJ). Keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "prh-fi",
     "gatewaySlug": "prh-fi",
-    "sourceHash": "v1-9bf2c20f898085949cd42de662049782dd67f893c61157f343b52d27dd62d022",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-4d88570cf47dbb2ae86cdb345854264fcd73b9a5c861fd0f62206f329ff4aeeb",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
